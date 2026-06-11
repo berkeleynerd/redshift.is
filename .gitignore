@@ -1,0 +1,4 @@
+# smol build output — deployed to the pages branch, never tracked on main
+/public/
+.smol-build-*
+.DS_Store

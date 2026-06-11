@@ -1,0 +1,12 @@
+{
+  "format": "smol-site-v1",
+  "title": "Redshift ehf.",
+  "description": "Professional Technology Services for Expanding Enterprises",
+  "language": "en-GB",
+  "base_url": "https://redshift.is",
+  "publisher": "Redshift ehf.",
+  "theme": "redshift-xhtml",
+  "output_mode": "flat-xhtml-v1",
+  "sign_key": "",
+  "nav": []
+}
