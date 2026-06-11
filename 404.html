@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB" lang="en-GB">
+<head>
+<meta charset="utf-8" http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Page not found</title>
+<link rel="canonical" href="https://redshift.is/404.html" />
+<meta property="og:title" content="Page not found" />
+<meta property="og:site_name" content="Redshift ehf." />
+<meta property="og:url" content="https://redshift.is/404.html" />
+<meta property="og:type" content="website" />
+<style type="text/css">
+/*
+ * Redshift ehf. — a self-contained port to smol.
+ * Hand-pruned to exactly the selectors this single page uses. The prior
+ * theme's navbar, cards, gallery, form and lightbox rules (and the only
+ * background-image assets) are not used here, so they have been removed.
+ * Result: no remote-asset refs, no @font-face, no JavaScript — fonts are system stacks.
+ */
+
+/* ---- design tokens (light) ---- */
+:root{--page-margin:6vw;--page-width:1600px;--entry-width:44rem;--navbar-height:5rem;--border-radius:6px;--baseline:0.28333rem;--transition:.26s ease-in-out;--body-font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";--heading-font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";--logo-font:var(--body-font);--menu-font:var(--body-font);--font-size:clamp(1rem, 1rem + (0.19999999999999996 * ((100vw - 20rem) / 100)), 1.2rem);--font-weight-normal:450;--font-weight-bold:700;--line-height:1.7;--letter-spacing:0em;--headings-weight:600;--headings-transform:none;--headings-style:normal;--headings-letter-spacing:-0.01em;--headings-line-height:1.2;--hero-content-width:50%;--section-title-width:60ch;--white:#FFFFFF;--black:#000000;--helper:#FFFFFF;--dark:#17181E;--gray:#57585a;--light:#cacbcf;--lighter:#e9eaed;--lightest:#f1f2f5;--page-bg:#FFFFFF;--color:#0469FD;--text-color:#17181E;--headings-color:#17181E;--link-color:#17181E;--link-color-hover:#0469FD;--logo-color:#17181E}
+@media all and (min-width:56.25em){:root{--navbar-height:7rem}}
+
+/* ---- design tokens (dark, honouring prefers-color-scheme) ---- */
+@media (prefers-color-scheme:dark){:root{--white:#FFFFFF;--black:#FFFFFF;--helper:#202020;--dark:#CECBCB;--gray:#9D9D9D;--light:#3C3C3C;--lighter:#2B2B2B;--lightest:#232323;--page-bg:#181818;--color:#A64B2A;--text-color:#BFBFBF;--headings-color:#EEEDED;--link-color:#EEEDED;--link-color-hover:#C86844;--logo-color:#FFFFFF}}
+
+/* ---- reset ---- */
+*,:after,:before{-webkit-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0}
+article,aside,footer,header,hgroup,main,nav,section{display:block}
+
+html{font-size:var(--font-size);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+body{background:var(--page-bg);color:var(--text-color);font-family:var(--body-font);font-variation-settings:"wght" var(--font-weight-normal);letter-spacing:var(--letter-spacing);line-height:var(--line-height);min-height:100vh;position:relative}
+
+a{color:var(--link-color);text-decoration:none;-webkit-transition:all var(--transition);transition:all var(--transition)}
+a:hover,a:active,a:focus{color:var(--link-color-hover)}
+
+dl,ol,p,ul{margin-top:calc(var(--baseline) * 6)}
+h1,h2,h3,h4,h5,h6{color:var(--headings-color);font-family:var(--heading-font);font-variation-settings:"wght" var(--headings-weight);font-style:var(--headings-style);-ms-hyphens:manual;hyphens:manual;letter-spacing:var(--headings-letter-spacing);line-height:var(--headings-line-height);margin-top:calc(var(--baseline) * 8);text-transform:var(--headings-transform)}
+.h1,h1{font-size:clamp(1.6758293408rem, 1.6758293408rem + 1.732532944 * (100vw - 20rem) / 100, 3.4083622848rem)}
+h2+*,h3+*,h4+*,h5+*,h6+*{margin-top:calc(var(--baseline) * 3)}
+
+/* ---- masthead ---- */
+.header{top:0;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;width:100%;z-index:99}
+.header>div{align-items:center;display:flex;gap:1rem;height:var(--navbar-height);opacity:1;position:relative}
+.logo{color:var(--logo-color);font-family:var(--logo-font);font-variation-settings:"wght" var(--font-weight-bold);letter-spacing:var(--headings-letter-spacing);margin-right:auto;order:1;position:relative;z-index:998;font-size:clamp(1.1377777785rem, 1.1377777785rem + .3351191022 * (100vw - 20rem) / 100, 1.4728968807rem)}
+@media all and (min-width:56.25em){.logo{margin-right:4rem}}
+
+/* ---- layout wrapper + sections ---- */
+.wrapper{-webkit-box-sizing:content-box;box-sizing:content-box;margin-left:auto;margin-right:auto;max-width:var(--page-width);padding:0 var(--page-margin)}
+.section{margin-bottom:calc(var(--baseline) * 14)}
+@media all and (min-width:96em){.section{margin-bottom:calc(var(--baseline) * 18)}}
+.section--light{background:var(--lightest);padding-top:calc(var(--baseline) * 12);padding-bottom:calc(var(--baseline) * 12)}
+@media all and (min-width:56.25em){.section--light{border-radius:calc(var(--border-radius) * 5);margin-left:var(--page-margin);margin-right:var(--page-margin)}}
+@media all and (min-width:96em){.section--light{padding-top:calc(var(--baseline) * 18);padding-bottom:calc(var(--baseline) * 18)}}
+
+/* ---- hero ---- */
+.hero{position:relative}
+.hero__container{display:flex;flex-direction:column;justify-content:space-between}
+@media all and (min-width:56.25em){.hero__container{flex-direction:row;gap:calc(var(--baseline) * 16)}}
+@media all and (min-width:75em){.hero__container{gap:calc(var(--baseline) * 24)}}
+.hero__content{font-family:var(--body-font);margin-top:calc(var(--baseline) * 3);font-size:clamp(1.066666667rem, 1.066666667rem + .0711111115 * (100vw - 20rem) / 100, 1.1377777785rem)}
+@media all and (min-width:56.25em){.hero__content{flex:0 0 calc(var(--hero-content-width) - var(--baseline) * 8);margin:calc(var(--baseline) * 10) 0}}
+@media all and (min-width:75em){.hero__content{flex:0 0 calc(var(--hero-content-width) - var(--baseline) * 12)}}
+@media all and (min-width:96em){.hero__content{margin:calc(var(--baseline) * 18) 0}}
+.hero__header h1{margin-top:0}
+.hero__aside{font-size:.8789062495rem;margin-top:calc(var(--baseline) * 6)}
+@media all and (min-width:37.5em){.hero__aside{margin-top:calc(var(--baseline) * 9)}}
+@media all and (min-width:96em){.hero__aside{margin-top:calc(var(--baseline) * 18)}}
+
+/* ---- footer ---- */
+.footer{font-size:.9374999997rem;margin-bottom:0;border-end-end-radius:0;border-end-start-radius:0;position:sticky;top:100%}
+.footer p{margin-top:calc(var(--baseline) * 2)}
+.footer__logo{display:inline-block;font-family:var(--logo-font);font-variation-settings:"wght" var(--font-weight-bold);letter-spacing:var(--headings-letter-spacing);line-height:1;font-size:clamp(1.1377777785rem, 1.1377777785rem + .1567604947 * (100vw - 20rem) / 100, 1.2945382732rem)}
+
+/* ---- footer grid utilities ---- */
+.grid{display:grid;grid-template-columns:repeat(1,1fr)}
+.gap-8{gap:calc(var(--baseline) * 8)}
+@media all and (min-width:37.5em){.sm\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media all and (min-width:75em){.lg\:grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}.lg\:gap-24{gap:calc(var(--baseline) * 24)}}
+</style>
+</head>
+<body class="home-template">
+<header class="header">
+  <div class="wrapper">
+    <a class="header__logo logo" href="https://redshift.is/">Redshift ehf.</a>
+  </div>
+</header>
+<main>
+  <section class="hero">
+    <div class="wrapper hero__container">
+      <div class="hero__content">
+        <header class="hero__header">
+          <h1>Page not found</h1>
+          <p>Sorry, the page you were looking for does not exist. <a href="https://redshift.is/">Return to the home page.</a></p>
+        </header>
+      </div>
+    </div>
+  </section>
+  
+</main>
+<footer class="section section--light footer">
+  <div class="footer__bottom">
+    <div class="wrapper grid gap-8 sm:gap-10 lg:gap-24 sm:grid-cols-2 lg:grid-cols-4">
+      <div class="footer__item">
+        <a class="footer__logo" href="https://redshift.is/">Redshift ehf.</a>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
